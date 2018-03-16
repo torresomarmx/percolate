@@ -1,0 +1,26 @@
+{
+  "name": "percolation",
+  "version": "1.0.0",
+  "description": "Percolation animation with HTML canvas using a Quick Union With Path Compression algorithm",
+  "main": "percolation.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/01omartorres/percolation.git"
+  },
+  "author": "Omar Torres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/01omartorres/percolation/issues"
+  },
+  "homepage": "https://github.com/01omartorres/percolation#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.1.1"
+  }
+}
