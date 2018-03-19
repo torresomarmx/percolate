@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-    entry: './lib/percolation.js',
+    entry: './lib/entry.js',
     output: {
         path: path.resolve(__dirname, 'lib'),
         filename: 'bundle.js'
@@ -14,7 +14,7 @@ const config = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['preset-env']
+                        presets: ['babel-preset-env']
                     }
                 }
             }
