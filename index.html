@@ -9,19 +9,18 @@
         <div id="view"> 
             <div id="left-view">
                 <h1>Percolation</h1>
-                <form id="simulations-form-with-viz">
-                    <label>Number of simulations (with visualization)</label>
+                <form id="simulations-form">
+                    <label for="number-of-simulations">Number of simulations</label>
+                    <input id="number-of-simulations" type="number">
                     <div>
-                        <input id="number-of-simulations-with-viz"type="number">
-                        <input type="submit" value="Start">
+                        <input type="radio" value="viz" id="viz-simulation">
+                        <label for="viz-simulation">With visualization</label>
                     </div>
-                </form>
-                <form id="simulations-form-no-viz">
-                    <label>Number of simulations (without visualization)</label>
                     <div>
-                        <input id="number-of-simulations-no-viz"type="number">
-                        <input type="submit" value="Start">
+                        <input type="radio" value="no-viz" id="no-viz-simulation">
+                        <label for="no-viz-simulaiton">Wihout visualization</label>
                     </div>
+                    <input type="submit" value="Start">
                 </form>
                 <div> 
                     <p>Mean: <span id="mean"></span></p>
