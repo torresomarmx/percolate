@@ -6,8 +6,24 @@
         <link rel="stylesheet" href="lib/styles.css">
     </head>
     <body>
-        <canvas id="canvas"></canvas>
-
+        <div id="view"> 
+            <div id="left-view">
+                <h1>Percolation</h1>
+                <form id="simulations-form">
+                    <label>Number of simulations</label>
+                    <div>
+                        <input id="number-of-simulations"type="number">
+                        <input type="submit" value="Start">
+                    </div>
+                </form>
+            </div>
+            
+            <div id="right-view">
+                <canvas id="canvas"></canvas>
+                <p>Open sites: <span id="open-sites-count"></span></p>
+            </div>
+        </div>
+            
         <script src="lib/bundle.js"></script>
     </body>
 </html>

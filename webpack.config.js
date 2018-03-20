@@ -1,7 +1,7 @@
 const path = require('path');
 
 const config = {
-    entry: './lib/entry.js',
+    entry: ["babel-polyfill",'./lib/entry.js'],
     output: {
         path: path.resolve(__dirname, 'lib'),
         filename: 'bundle.js'

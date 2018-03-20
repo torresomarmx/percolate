@@ -2,3 +2,20 @@
     display: flex;
     justify-content: center;
 }
+
+canvas{
+    background-color: black;
+}
+
+p{
+    text-align: center;
+}
+
+#left-view{
+    margin-right: 2rem;
+}
+
+#simulations-form{
+    display: flex;
+    flex-direction: column;
+}
