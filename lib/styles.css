@@ -1,3 +1,4 @@
-canvas{
-    /* background-color: red; */
+#view{
+    display: flex;
+    justify-content: center;
 }
