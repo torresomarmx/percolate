@@ -9,20 +9,22 @@
         <div id="view"> 
             <div id="left-view">
                 <h1>Percolation</h1>
-                <form id="simulations-form">
+                <form id="main-form">
                     <label for="number-of-simulations">Number of simulations</label>
-                    <input id="number-of-simulations" type="number">
-                    <div>
-                        <input type="radio" value="viz" id="viz-simulation">
-                        <label for="viz-simulation">With visualization</label>
+                    <input id="number-of-simulations" type="number" name="num">
+                    <div id="type-radios">
+                        <div>
+                            <input type="radio" value="viz" id="viz-simulation" name="type" checked>
+                            <label for="viz-simulation">With visualization</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="no-viz" id="no-viz-simulation" name="type">
+                            <label for="no-viz-simulaiton">Without visualization</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="radio" value="no-viz" id="no-viz-simulation">
-                        <label for="no-viz-simulaiton">Wihout visualization</label>
-                    </div>
-                    <input type="submit" value="Start">
+                    <input type="submit" value="Start" id="submit-button">
                 </form>
-                <div> 
+                <div id="stats"> 
                     <p>Mean: <span id="mean"></span></p>
                     <p>Standard deviation: <span id="stnd-dev"></span></p>
                 </div>
