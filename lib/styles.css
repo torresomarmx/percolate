@@ -7,19 +7,20 @@ canvas{
     background-color: black;
 }
 
-#right-view p{
-    text-align: center;
-}
-
 #left-view{
     margin-right: 2rem;
 }
 
-#simulations-form{
+#main-form{
     display: flex;
     flex-direction: column;
 }
 
 #stats{
     text-align: left
+}
+
+#canvas-info{
+    display: flex;
+    justify-content: space-between;
 }
