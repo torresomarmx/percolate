@@ -8,10 +8,10 @@
     <body>
         <div id="view"> 
             <div id="left-view">
-                <h1>Percolation</h1>
+                <h1 id="title">Percolation</h1>
                 <form id="main-form">
                     <label for="number-of-simulations">Number of simulations</label>
-                    <input id="number-of-simulations" type="number" name="num">
+                    <input id="number-of-simulations" type="number" name="num" min="1" max="1000000">
                     <div id="type-radios">
                         <div>
                             <input type="radio" value="viz" id="viz-simulation" name="type" checked>
@@ -22,7 +22,7 @@
                             <label for="no-viz-simulaiton">Without visualization</label>
                         </div>
                     </div>
-                    <input type="submit" value="Start" id="submit-button">
+                    <button form="main-form" type="submit" id="submit-button">Submit</button>
                 </form>
                 <div id="stats"> 
                     <p>Mean</p>

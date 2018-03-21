@@ -1,3 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #484b4d, #262e47);
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+h1{
+    margin: 0;
+}
+
+
+#title{
+    margin-bottom: 1rem;
+}
+
 #view{
     display: flex;
     justify-content: center;
@@ -24,4 +42,21 @@ canvas{
 #canvas-info{
     display: flex;
     justify-content: space-between;
+}
+
+#submit-button{
+    padding: .5rem;
+    margin-top: .5rem;
+}
+
+#submit-button:hover{
+    cursor: pointer;
+}
+
+#type-radios{
+    margin: .5rem 0;
+}
+
+#number-of-simulations{
+    margin: .5rem 0;
 }
