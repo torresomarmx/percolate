@@ -1,8 +1,8 @@
-# Percolation
+# Percolate
 
-[Run simulations](https://01omartorres.github.io/percolation)
+[Run simulations](https://01omartorres.github.io/percolate)
 
-Inspired by an assignment in Princeton's COS 226, Percolation is a web application that estimates the percolation threshold via a Monte Carlo simulation. 
+Inspired by an assignment in Princeton's COS 226, Percolate is a web application that estimates the percolation threshold via a Monte Carlo simulation. 
 
 The percolation threshold P* is the site vacancy percentage, or ratio of open to closed sites, at which any other P value above P* in a given system will almost always percolate. 
 
