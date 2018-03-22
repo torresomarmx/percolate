@@ -16,7 +16,7 @@ To allow for a quick and efficient calculation of whether a system percolates in
 
 ![Preview](https://raw.githubusercontent.com/01omartorres/percolation/master/docs/preview.png)
 
-![Connected Sites](https://raw.githubusercontent.com/01omartorres/percolation/master/docs/connected_sites.png)
+![Connected Sites](https://raw.githubusercontent.com/01omartorres/percolation/master/docs/connected.png)
 
 # Technologies 
 
