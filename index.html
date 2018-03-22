@@ -6,40 +6,49 @@
         <link rel="stylesheet" href="lib/styles.css">
     </head>
     <body>
-        <div id="view"> 
-            <div id="left-view">
-                <h1 id="title">Percolation</h1>
-                <form id="main-form">
-                    <label for="number-of-simulations">Number of simulations</label>
-                    <input id="number-of-simulations" type="number" name="num" min="1" max="1000000">
-                    <div id="type-radios">
-                        <div>
-                            <input type="radio" value="viz" id="viz-simulation" name="type" checked>
-                            <label for="viz-simulation">With visualization</label>
+        <div id="view-container"> 
+            <div id="views">
+                <div id="left-view">
+                    <h1 id="title">Percolation</h1>
+                    <form id="main-form">
+                        <label for="number-of-simulations">Number of simulations</label>
+                        <input id="number-of-simulations" type="number" name="num" min="1" max="1000000">
+                        <div id="type-radios">
+                            <div>
+                                <input type="radio" value="viz" id="viz-simulation" name="type" checked>
+                                <label for="viz-simulation">With visualization</label>
+                            </div>
+                            <div>
+                                <input type="radio" value="no-viz" id="no-viz-simulation" name="type">
+                                <label for="no-viz-simulaiton">Without visualization</label>
+                            </div>
                         </div>
-                        <div>
-                            <input type="radio" value="no-viz" id="no-viz-simulation" name="type">
-                            <label for="no-viz-simulaiton">Without visualization</label>
+                        <button form="main-form" type="submit" id="submit-button">Start</button>
+                    </form>
+                    <div id="stats"> 
+                        <h2 id="stats-section-title">P* Stats</h2>
+                        <div class="section">
+                            <p class="stat-title">Mean</p>
+                            <p id="mean" class="child-section stat-display"></p>
+                        </div>
+                        <div class="section">
+                            <p class="stat-title">Standard deviation</p>
+                            <p id="stnd-dev" class="child-section stat-display"></p>
+                        </div>
+                        <div class="section">
+                            <p class="stat-title">95% confidence interval</p>
+                            <p id="confidence-low" class="child-section stat-display"></p>
+                            <p id="confidence-high" class="child-section stat-display"></p>
                         </div>
                     </div>
-                    <button form="main-form" type="submit" id="submit-button">Submit</button>
-                </form>
-                <div id="stats"> 
-                    <p>Mean</p>
-                    <p id="mean"></p>
-                    <p>Standard deviation</p>
-                    <p id="stnd-dev"></p>
-                    <p>95% confidence interval</p>
-                    <p id="confidence-low"></p>
-                    <p id="confidence-high"></p>
                 </div>
-            </div>
-            
-            <div id="right-view">
-                <canvas id="canvas"></canvas>
-                <div id="canvas-info">
-                    <p>Open sites: <span id="open-sites-count">0</span></p>
-                    <p>20 x 20</p>
+                
+                <div id="right-view">
+                    <canvas id="canvas"></canvas>
+                    <div id="canvas-info">
+                        <p>Open sites: <span id="open-sites-count">0</span></p>
+                        <p>20 x 20</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -7,18 +7,25 @@ body{
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 
-h1{
+h1,h2,p{
     margin: 0;
+    padding: 0;
 }
 
 
 #title{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-#view{
+#view-container{
     display: flex;
     justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+#views{
+    display: flex; 
 }
 
 canvas{
@@ -26,13 +33,16 @@ canvas{
 }
 
 #left-view{
-    margin-right: 2rem;
-    width: 12rem;
+    margin-right: 1rem;
+    width: 16rem;
+    background-color: white;
+    padding: 2rem;
 }
 
 #main-form{
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.5rem;
 }
 
 #stats{
@@ -59,4 +69,30 @@ canvas{
 
 #number-of-simulations{
     margin: .5rem 0;
+}
+
+#canvas-info{
+    background-color: white;
+    margin-top: .5rem;
+    padding: 1rem 1rem;
+}
+
+.section{
+    margin-bottom: 1rem;
+}
+
+.child-section{
+    margin-top: .6rem;
+}
+
+.stat-display{
+    height: 1rem;
+}
+
+.stat-title{
+    font-weight: 600;
+}
+
+#stats-section-title{
+    margin-bottom: 1.5rem;
 }
