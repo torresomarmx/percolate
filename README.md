@@ -14,6 +14,14 @@ Sites can only be connected vertically or horizontally, never diagonally.
 
 To allow for a quick and efficient calculation of whether a system percolates in any given simulation, the application uses a **disjoint-set data structure with a union-find algorithm that leverages path compression and weighted union**. 
 
+# How it works
+
+* For every simulation, the system picks a random square to open.
+* The system continues to open squares at random until the system percolates.
+* Once the system percolates, the P values (ratio of open to closed sites) for the current simulation is stored. 
+* This process repeats for n number of simulations. 
+* Once all n sumulation are run, the mean, standard deviation, and a confidence interval for the percolation threshold are calculated. 
+
 ![Preview](https://raw.githubusercontent.com/01omartorres/percolation/master/docs/preview.png)
 
 # Valid connections
