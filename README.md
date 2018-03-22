@@ -12,9 +12,11 @@ The system percolates if and only if any given site at the top-most row is conne
 
 Sites can only be connected vertically or horizontally, never diagonally. 
 
-To allow for a quick and efficient calculation of whether a system percolates in any given simulation, the application uses a disjoint-set data structure with a union-find algorithm that leverages path compression and weighted union. 
+To allow for a quick and efficient calculation of whether a system percolates in any given simulation, the application uses a **disjoint-set data structure with a union-find algorithm that leverages path compression and weighted union**. 
 
 ![Preview](https://raw.githubusercontent.com/01omartorres/percolation/master/docs/preview.png)
+
+# Valid connections
 
 ![Connected Sites](https://raw.githubusercontent.com/01omartorres/percolation/master/docs/connected.png)
 
