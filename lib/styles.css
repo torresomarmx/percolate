@@ -22,6 +22,7 @@ h1,h2,p{
     justify-content: center;
     min-height: 100vh;
     align-items: center;
+    flex-direction: column;
 }
 
 #views{
@@ -56,19 +57,17 @@ canvas{
 
 #submit-button{
     padding: .5rem;
-    margin-top: .5rem;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgb(6, 94, 226);
+    border: none;
+    color: white;
 }
 
 #submit-button:hover{
     cursor: pointer;
-}
-
-#type-radios{
-    margin: .5rem 0;
-}
-
-#number-of-simulations{
-    margin: .5rem 0;
+    background-color: rgb(6, 80, 190);
 }
 
 #canvas-info{
@@ -94,5 +93,9 @@ canvas{
 }
 
 #stats-section-title{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+#number-of-simulations{
+    width: 100%;
 }
