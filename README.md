@@ -2,13 +2,13 @@
 
 [Run simulations](https://torresomarmx.github.io/percolate)
 
-Inspired by an assignment in Princeton's COS 226, Percolate is a web application that estimates the percolation threshold via a Monte Carlo simulation.
+A web application that estimates the percolation threshold via a Monte Carlo simulation.
 
 The percolation threshold P* is the ratio of open to closed sites that must be exceeded in order to say with a high degree of confidence that a system percolates.
 
 In the context of this application a site is a small square, with a white fill-color representing an opened state, and black fill-color representing a closed state.
 
-The system percolates if and only if any given site at the top-most row is connected to any given site at the bottom-most row.
+The system percolates if and only if any open site at the top-most row is connected to any open site at the bottom-most row.
 
 Sites can only be connected vertically or horizontally, never diagonally.
 
@@ -24,8 +24,4 @@ To allow for a quick and efficient calculation of whether a system percolates in
 * Once all n sumulation are run, the mean, standard deviation, and a confidence interval for the percolation threshold are calculated.
 
 ![Preview](https://raw.githubusercontent.com/torresomarmx/percolate/master/docs/preview.png)
-
-# Technologies
-
-The app was created using Javascript, HTML Canvas, CSS, & Webpack.
 
