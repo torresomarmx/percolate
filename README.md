@@ -1,6 +1,6 @@
 # Percolate
 
-[Run simulations](https://torresomarmx.github.io/percolate)
+[Run simulations](https://torresomarmx.github.io/percolate/)
 
 A web application that estimates the percolation threshold via a Monte Carlo simulation.
 
